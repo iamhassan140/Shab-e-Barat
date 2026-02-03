@@ -1,0 +1,1573 @@
+ <!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شبِ براءت مبارک</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-green: #0d5a3c;
+            --light-green: #1a7a50;
+            --accent-green: #2a9d65;
+            --pale-green: #d4f1e3;
+            --pure-white: #ffffff;
+            --cream: #f8fdf9;
+            --gold: #d4af37;
+            --dark-gold: #b8941f;
+            --shadow: rgba(13, 90, 60, 0.2);
+        }
+
+        body {
+            font-family: 'Noto Nastaliq Urdu', serif;
+            background: var(--cream);
+            color: var(--primary-green);
+            line-height: 2.2;
+            overflow-x: hidden;
+            direction: rtl;
+        }
+
+        /* Animated Background Pattern */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 25% 25%, rgba(42, 157, 101, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(13, 90, 60, 0.03) 0%, transparent 50%);
+            z-index: -1;
+            animation: breathe 8s ease-in-out infinite;
+        }
+
+        @keyframes breathe {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        /* Enhanced Hero Section with Floating Icons */
+        header {
+            text-align: center;
+            padding: 120px 20px 80px;
+            background: linear-gradient(135deg, #0d5a3c 0%, #1a7a50 50%, #2a9d65 100%);
+            position: relative;
+            overflow: hidden;
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l4 8h8l-6 6 2 8-8-4-8 4 2-8-6-6h8z' fill='%23ffffff' fill-opacity='0.03'/%3E%3C/svg%3E");
+            animation: moveStars 60s linear infinite;
+        }
+
+        @keyframes moveStars {
+            from { transform: translateY(0); }
+            to { transform: translateY(60px); }
+        }
+
+        /* Floating Background Icons in Hero */
+        .hero-bg-icons {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .floating-icon {
+            position: absolute;
+            color: rgba(255, 255, 255, 0.08);
+            font-size: 3rem;
+            animation: floatAround 20s ease-in-out infinite;
+        }
+
+        .floating-icon:nth-child(1) {
+            top: 10%;
+            left: 5%;
+            font-size: 4rem;
+            animation-duration: 25s;
+            animation-delay: 0s;
+        }
+
+        .floating-icon:nth-child(2) {
+            top: 20%;
+            right: 8%;
+            font-size: 3.5rem;
+            animation-duration: 22s;
+            animation-delay: 2s;
+        }
+
+        .floating-icon:nth-child(3) {
+            top: 60%;
+            left: 10%;
+            font-size: 3rem;
+            animation-duration: 28s;
+            animation-delay: 4s;
+        }
+
+        .floating-icon:nth-child(4) {
+            top: 70%;
+            right: 12%;
+            font-size: 3.8rem;
+            animation-duration: 24s;
+            animation-delay: 1s;
+        }
+
+        .floating-icon:nth-child(5) {
+            top: 40%;
+            left: 15%;
+            font-size: 3.2rem;
+            animation-duration: 26s;
+            animation-delay: 3s;
+        }
+
+        .floating-icon:nth-child(6) {
+            top: 30%;
+            right: 20%;
+            font-size: 3.6rem;
+            animation-duration: 23s;
+            animation-delay: 5s;
+        }
+
+        .floating-icon:nth-child(7) {
+            top: 80%;
+            left: 25%;
+            font-size: 3.4rem;
+            animation-duration: 27s;
+            animation-delay: 2.5s;
+        }
+
+        .floating-icon:nth-child(8) {
+            top: 15%;
+            right: 30%;
+            font-size: 3rem;
+            animation-duration: 29s;
+            animation-delay: 1.5s;
+        }
+
+        @keyframes floatAround {
+            0%, 100% {
+                transform: translate(0, 0) rotate(0deg);
+                opacity: 0.08;
+            }
+            25% {
+                transform: translate(20px, -30px) rotate(90deg);
+                opacity: 0.12;
+            }
+            50% {
+                transform: translate(-15px, 20px) rotate(180deg);
+                opacity: 0.06;
+            }
+            75% {
+                transform: translate(30px, 15px) rotate(270deg);
+                opacity: 0.10;
+            }
+        }
+
+        .hero-icon {
+            font-size: 5rem;
+            color: var(--gold);
+            margin-bottom: 30px;
+            animation: floatIcon 3s ease-in-out infinite;
+            filter: drop-shadow(0 10px 30px rgba(212, 175, 55, 0.4));
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes floatIcon {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+
+        h1 {
+            font-size: 4.5rem;
+            color: var(--pure-white);
+            margin-bottom: 25px;
+            text-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
+            font-weight: 700;
+            animation: fadeInDown 1s ease-out;
+            letter-spacing: 2px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .subtitle {
+            font-size: 2rem;
+            color: var(--pale-green);
+            font-weight: 500;
+            margin-bottom: 15px;
+            animation: fadeInUp 1s ease-out 0.3s both;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-description {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 700px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease-out 0.5s both;
+            line-height: 2;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-divider {
+            width: 150px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            margin: 30px auto;
+            animation: fadeIn 1s ease-out 0.7s both;
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* Section Base Styles */
+        section {
+            margin: 60px auto;
+            position: relative;
+            animation: fadeInScale 0.8s ease-out;
+            animation-fill-mode: both;
+            transition: all 0.4s ease;
+        }
+
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.95) translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        section:nth-child(1) { animation-delay: 0.1s; }
+        section:nth-child(2) { animation-delay: 0.2s; }
+        section:nth-child(3) { animation-delay: 0.3s; }
+        section:nth-child(4) { animation-delay: 0.4s; }
+        section:nth-child(5) { animation-delay: 0.5s; }
+        section:nth-child(6) { animation-delay: 0.6s; }
+        section:nth-child(7) { animation-delay: 0.7s; }
+        section:nth-child(8) { animation-delay: 0.8s; }
+
+        /* Section 1: Card with Icon - Introduction */
+        .section-1 {
+            background: var(--pure-white);
+            padding: 70px 60px;
+            border-radius: 25px;
+            box-shadow: 0 15px 50px var(--shadow);
+            border-right: 6px solid var(--accent-green);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-1::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(42, 157, 101, 0.05) 0%, transparent 70%);
+            animation: rotate 30s linear infinite;
+        }
+
+        .section-1:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 70px var(--shadow);
+            border-right-color: var(--gold);
+        }
+
+        .section-icon {
+            font-size: 3.5rem;
+            color: var(--accent-green);
+            text-align: center;
+            margin-bottom: 25px;
+            transition: all 0.4s ease;
+        }
+
+        .section-1:hover .section-icon {
+            transform: scale(1.2) rotate(10deg);
+            color: var(--gold);
+        }
+
+        /* Section 2: Gradient Box - Significance */
+        .section-2 {
+            background: linear-gradient(135deg, var(--pale-green) 0%, var(--pure-white) 100%);
+            padding: 70px 60px;
+            border-radius: 25px;
+            box-shadow: 0 15px 50px var(--shadow);
+            border: 3px solid var(--accent-green);
+            position: relative;
+        }
+
+        .section-2:hover {
+            transform: translateX(-10px);
+            box-shadow: 0 25px 70px rgba(42, 157, 101, 0.3);
+            border-color: var(--gold);
+        }
+
+        .section-2 .section-icon {
+            color: var(--primary-green);
+        }
+
+        .section-2:hover .section-icon {
+            color: var(--gold);
+            transform: scale(1.15) rotate(-10deg);
+        }
+
+        /* Quranic Verses Section */
+        .quran-section {
+            background: linear-gradient(135deg, #0d5a3c 0%, #1a7a50 100%);
+            padding: 70px 60px;
+            border-radius: 25px;
+            box-shadow: 0 20px 60px rgba(13, 90, 60, 0.4);
+            position: relative;
+            overflow: hidden;
+            border: 3px solid var(--gold);
+        }
+
+        .quran-section::before {
+            content: '☪';
+            position: absolute;
+            font-size: 20rem;
+            color: rgba(255, 255, 255, 0.03);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+
+        .quran-section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 30px 80px rgba(13, 90, 60, 0.5);
+            border-color: var(--pure-white);
+        }
+
+        .quran-section h2 {
+            color: var(--pure-white);
+            position: relative;
+            z-index: 1;
+        }
+
+        .quran-section h2::after {
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+
+        .quran-section .section-icon {
+            color: var(--gold);
+        }
+
+        .verse-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 45px 40px;
+            border-radius: 20px;
+            margin-bottom: 35px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            z-index: 1;
+            transition: all 0.4s ease;
+        }
+
+        .verse-container:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: var(--gold);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .verse-number {
+            text-align: center;
+            color: var(--gold);
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .verse-number i {
+            font-size: 1.2rem;
+        }
+
+        .arabic-text {
+            font-family: 'Amiri Quran', 'Traditional Arabic', serif;
+            font-size: 2.2rem;
+            text-align: center;
+            color: var(--pure-white);
+            line-height: 3;
+            margin-bottom: 30px;
+            direction: rtl;
+            padding: 25px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 15px;
+            border-right: 4px solid var(--gold);
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .urdu-translation {
+            font-size: 1.5rem;
+            text-align: justify;
+            color: rgba(255, 255, 255, 0.95);
+            line-height: 2.5;
+            padding: 20px;
+            background: rgba(13, 90, 60, 0.3);
+            border-radius: 12px;
+            border-right: 3px solid rgba(212, 175, 55, 0.5);
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            background: linear-gradient(135deg, var(--pure-white) 0%, var(--pale-green) 100%);
+            padding: 80px 60px;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px var(--shadow);
+            border: 3px solid var(--accent-green);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-section::before {
+            content: '✦';
+            position: absolute;
+            font-size: 25rem;
+            color: rgba(42, 157, 101, 0.03);
+            top: 50%;
+            right: -100px;
+            transform: translateY(-50%) rotate(15deg);
+        }
+
+        .gallery-section:hover {
+            border-color: var(--gold);
+            box-shadow: 0 30px 80px var(--shadow);
+        }
+
+        .gallery-section h2 {
+            position: relative;
+            z-index: 1;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .gallery-item {
+            background: var(--pure-white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(13, 90, 60, 0.15);
+            transition: all 0.4s ease;
+            cursor: pointer;
+            position: relative;
+            border: 3px solid transparent;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-15px) scale(1.03);
+            box-shadow: 0 20px 50px rgba(13, 90, 60, 0.3);
+            border-color: var(--gold);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, var(--light-green), var(--accent-green));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+        }
+
+        .gallery-image i {
+            font-size: 5rem;
+            color: var(--pure-white);
+            position: relative;
+            z-index: 1;
+            transition: all 0.4s ease;
+            filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+        }
+
+        .gallery-item:hover .gallery-image i {
+            transform: scale(1.2) rotate(10deg);
+        }
+
+        .gallery-content {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .gallery-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            margin-bottom: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-title {
+            color: var(--gold);
+        }
+
+        .gallery-description {
+            font-size: 1.3rem;
+            color: var(--light-green);
+            line-height: 2;
+        }
+
+        /* Section 3: Bordered Card - What to Do */
+        .section-3 {
+            background: var(--pure-white);
+            padding: 70px 60px;
+            border-radius: 25px;
+            box-shadow: 0 15px 50px var(--shadow);
+            border: 3px dashed var(--accent-green);
+            position: relative;
+        }
+
+        .section-3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, rgba(42, 157, 101, 0.1) 0%, transparent 70%);
+            border-radius: 25px 0 25px 0;
+        }
+
+        .section-3:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 30px 80px var(--shadow);
+            border-color: var(--gold);
+            border-style: solid;
+        }
+
+        .section-3 .section-icon {
+            color: var(--light-green);
+        }
+
+        .section-3:hover .section-icon {
+            color: var(--gold);
+            transform: scale(1.2) rotate(360deg);
+        }
+
+        /* Section 4: Split Design - Prayers */
+        .section-4 {
+            background: linear-gradient(to left, var(--pure-white) 0%, var(--pure-white) 50%, var(--pale-green) 50%, var(--pale-green) 100%);
+            padding: 70px 60px;
+            border-radius: 25px;
+            box-shadow: 0 15px 50px var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-4::before {
+            content: '☪';
+            position: absolute;
+            font-size: 15rem;
+            color: rgba(42, 157, 101, 0.05);
+            top: 50%;
+            right: 5%;
+            transform: translateY(-50%);
+        }
+
+        .section-4:hover {
+            transform: translateX(10px);
+            box-shadow: 0 25px 70px rgba(13, 90, 60, 0.3);
+        }
+
+        .section-4:hover::before {
+            color: rgba(212, 175, 55, 0.1);
+            transform: translateY(-50%) rotate(15deg);
+        }
+
+        .section-4 .section-icon {
+            color: var(--accent-green);
+        }
+
+        .section-4:hover .section-icon {
+            color: var(--gold);
+            transform: scale(1.15);
+        }
+
+        /* Section 5: Elevated Card - Lessons */
+        .section-5 {
+            background: var(--pure-white);
+            padding: 70px 60px;
+            border-radius: 25px;
+            box-shadow: 0 20px 60px var(--shadow);
+            border-left: 6px solid var(--light-green);
+            position: relative;
+        }
+
+        .section-5::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, var(--accent-green), var(--gold), var(--accent-green));
+            border-radius: 25px 25px 0 0;
+        }
+
+        .section-5:hover {
+            transform: translateY(-15px) rotate(-1deg);
+            box-shadow: 0 35px 90px var(--shadow);
+            border-left-color: var(--gold);
+        }
+
+        .section-5 .section-icon {
+            color: var(--light-green);
+        }
+
+        .section-5:hover .section-icon {
+            color: var(--gold);
+            transform: scale(1.25);
+        }
+
+        /* Common Heading Styles */
+        h2 {
+            font-size: 2.8rem;
+            color: var(--primary-green);
+            margin-bottom: 35px;
+            text-align: center;
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 25px;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
+            width: 120px;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, var(--accent-green), transparent);
+            border-radius: 2px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            text-align: justify;
+            color: var(--primary-green);
+            line-height: 2.5;
+            position: relative;
+            z-index: 1;
+        }
+
+        .highlight {
+            color: var(--accent-green);
+            font-weight: 600;
+            position: relative;
+        }
+
+        .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            right: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--gold);
+            opacity: 0.3;
+        }
+
+        /* Enhanced Dua Section */
+        .dua-section {
+            background: linear-gradient(135deg, #0d5a3c 0%, #1a7a50 50%, #2a9d65 100%);
+            color: var(--pure-white);
+            padding: 100px 60px;
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 25px 80px rgba(13, 90, 60, 0.4);
+        }
+
+        .dua-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                repeating-linear-gradient(
+                    45deg,
+                    transparent,
+                    transparent 30px,
+                    rgba(255, 255, 255, 0.02) 30px,
+                    rgba(255, 255, 255, 0.02) 60px
+                );
+        }
+
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .star {
+            position: absolute;
+            color: var(--gold);
+            font-size: 1.5rem;
+            opacity: 0.4;
+            animation: twinkle 3s ease-in-out infinite;
+        }
+
+        .star:nth-child(1) { top: 8%; left: 12%; animation-delay: 0s; font-size: 2rem; }
+        .star:nth-child(2) { top: 18%; left: 85%; animation-delay: 0.7s; }
+        .star:nth-child(3) { top: 45%; left: 8%; animation-delay: 1.2s; font-size: 1.8rem; }
+        .star:nth-child(4) { top: 70%; left: 88%; animation-delay: 1.8s; }
+        .star:nth-child(5) { top: 35%; left: 50%; animation-delay: 2.3s; font-size: 2.2rem; }
+        .star:nth-child(6) { top: 85%; left: 25%; animation-delay: 0.4s; }
+        .star:nth-child(7) { top: 60%; left: 70%; animation-delay: 1.5s; font-size: 1.7rem; }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.2; transform: scale(1); }
+            50% { opacity: 0.9; transform: scale(1.4); }
+        }
+
+        .dua-section h2 {
+            color: var(--pure-white);
+            font-size: 3.5rem;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 50px;
+        }
+
+        .dua-section h2::after {
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+
+        .dua-subsection {
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(15px);
+            padding: 50px 45px;
+            border-radius: 25px;
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 1;
+            transition: all 0.4s ease;
+        }
+
+        .dua-subsection:hover {
+            background: rgba(255, 255, 255, 0.18);
+            border-color: var(--gold);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .dua-heading {
+            font-size: 2.2rem;
+            text-align: center;
+            color: var(--gold);
+            font-weight: 700;
+            margin-bottom: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .dua-heading i {
+            font-size: 2rem;
+        }
+
+        .dua-text {
+            font-size: 1.7rem;
+            text-align: center;
+            line-height: 2.8;
+            color: var(--pure-white);
+            text-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+            margin-bottom: 25px;
+        }
+
+        .ameen-btn {
+            display: block;
+            margin: 40px auto 0;
+            padding: 18px 60px;
+            font-size: 1.8rem;
+            font-family: 'Noto Nastaliq Urdu', serif;
+            font-weight: 700;
+            color: var(--primary-green);
+            background: linear-gradient(135deg, var(--gold) 0%, var(--dark-gold) 100%);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ameen-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .ameen-btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 15px 45px rgba(212, 175, 55, 0.6);
+        }
+
+        .ameen-btn:active::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        /* Ameen Animation */
+        .blessing {
+            position: fixed;
+            font-size: 2.5rem;
+            pointer-events: none;
+            animation: floatBlessing 3s ease-out forwards;
+            z-index: 9999;
+            filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.8));
+        }
+
+        @keyframes floatBlessing {
+            0% {
+                opacity: 1;
+                transform: translateY(0) scale(1) rotate(0deg);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-200px) scale(1.5) rotate(360deg);
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, var(--pale-green) 0%, var(--pure-white) 100%);
+            color: var(--primary-green);
+            font-size: 1.4rem;
+            margin-top: 80px;
+            border-top: 4px solid var(--accent-green);
+        }
+
+        footer p {
+            text-align: center;
+        }
+
+        .footer-icons {
+            font-size: 2rem;
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-icons i {
+            color: var(--accent-green);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .footer-icons i:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        .footer-icons i:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 1024px) {
+            .container {
+                max-width: 100%;
+                padding: 40px 15px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 25px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            .subtitle {
+                font-size: 1.5rem;
+            }
+
+            .hero-description {
+                font-size: 1.1rem;
+            }
+
+            .hero-icon {
+                font-size: 4rem;
+            }
+
+            .floating-icon {
+                font-size: 2.5rem !important;
+            }
+
+            section {
+                margin: 40px auto;
+            }
+
+            .section-1, .section-2, .section-3, .section-4, .section-5, .quran-section, .gallery-section {
+                padding: 50px 35px;
+                border-radius: 20px;
+            }
+
+            .section-icon {
+                font-size: 2.8rem;
+            }
+
+            h2 {
+                font-size: 2.2rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+                line-height: 2.3;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 20px;
+            }
+
+            .gallery-image {
+                height: 200px;
+            }
+
+            .gallery-image i {
+                font-size: 4rem;
+            }
+
+            .gallery-title {
+                font-size: 1.6rem;
+            }
+
+            .gallery-description {
+                font-size: 1.2rem;
+            }
+
+            .arabic-text {
+                font-size: 1.8rem;
+                line-height: 2.5;
+                padding: 20px;
+            }
+
+            .urdu-translation {
+                font-size: 1.3rem;
+                line-height: 2.3;
+            }
+
+            .verse-number {
+                font-size: 1.2rem;
+            }
+
+            .dua-section {
+                padding: 70px 35px;
+            }
+
+            .dua-section h2 {
+                font-size: 2.5rem;
+            }
+
+            .dua-heading {
+                font-size: 1.8rem;
+            }
+
+            .dua-text {
+                font-size: 1.4rem;
+                line-height: 2.5;
+            }
+
+            .dua-subsection {
+                padding: 40px 30px;
+            }
+
+            .ameen-btn {
+                padding: 15px 45px;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 80px 15px 60px;
+                min-height: 60vh;
+            }
+
+            h1 {
+                font-size: 2.3rem;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .hero-description {
+                font-size: 1rem;
+            }
+
+            .hero-icon {
+                font-size: 3rem;
+            }
+
+            .floating-icon {
+                font-size: 2rem !important;
+            }
+
+            .section-1, .section-2, .section-3, .section-4, .section-5, .quran-section, .gallery-section {
+                padding: 40px 25px;
+                margin: 30px auto;
+            }
+
+            .section-icon {
+                font-size: 2.3rem;
+            }
+
+            h2 {
+                font-size: 1.9rem;
+            }
+
+            p {
+                font-size: 1.15rem;
+                line-height: 2.2;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .gallery-image {
+                height: 180px;
+            }
+
+            .gallery-image i {
+                font-size: 3.5rem;
+            }
+
+            .gallery-title {
+                font-size: 1.5rem;
+            }
+
+            .gallery-description {
+                font-size: 1.1rem;
+            }
+
+            .gallery-content {
+                padding: 20px;
+            }
+
+            .arabic-text {
+                font-size: 1.5rem;
+                line-height: 2.3;
+                padding: 15px;
+            }
+
+            .urdu-translation {
+                font-size: 1.15rem;
+                line-height: 2.2;
+            }
+
+            .verse-number {
+                font-size: 1.1rem;
+            }
+
+            .dua-section {
+                padding: 60px 25px;
+            }
+
+            .dua-section h2 {
+                font-size: 2rem;
+            }
+
+            .dua-heading {
+                font-size: 1.5rem;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .dua-text {
+                font-size: 1.2rem;
+                line-height: 2.3;
+            }
+
+            .dua-subsection {
+                padding: 35px 25px;
+                margin-bottom: 30px;
+            }
+
+            .ameen-btn {
+                padding: 13px 35px;
+                font-size: 1.3rem;
+            }
+
+            .blessing {
+                font-size: 2rem;
+            }
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Floating Background Icons -->
+        <div class="hero-bg-icons">
+            <i class="fas fa-mosque floating-icon"></i>
+            <i class="fas fa-moon floating-icon"></i>
+            <i class="fas fa-star-and-crescent floating-icon"></i>
+            <i class="fas fa-book-quran floating-icon"></i>
+            <i class="fas fa-kaaba floating-icon"></i>
+            <i class="fas fa-hands-praying floating-icon"></i>
+            <i class="fas fa-star floating-icon"></i>
+            <i class="fas fa-praying-hands floating-icon"></i>
+        </div>
+
+        <div class="hero-icon">
+            <i class="fas fa-mosque"></i>
+        </div>
+        <h1>شبِ براءت مبارک</h1>
+        <div class="hero-divider"></div>
+        <p class="subtitle">شعبانُ المُعظَّم کی پُر نور رات</p>
+        <p class="hero-description">
+            اللہ تعالیٰ کی رحمتوں اور برکتوں والی یہ مقدس رات، بخشش اور مغفرت کا عظیم موقع
+        </p>
+    </header>
+
+    <div class="container">
+        <!-- Section 1: Introduction -->
+        <section class="section-1">
+            <div class="section-icon">
+                <i class="fas fa-moon"></i>
+            </div>
+            <h2>شبِ براءت کیا ہے؟</h2>
+            <p>
+                شبِ براءت یعنی <span class="highlight">نجات اور بخشش کی رات</span>، ماہِ شعبان کی پندرہویں شب کو کہا جاتا ہے۔ یہ مبارک رات امتِ مسلمہ کے لیے <span class="highlight">رحمتوں اور برکتوں کا خزانہ</span> ہے۔ اس رات پروردگارِ عالم اپنے بندوں پر خصوصی کرم و عنایت فرماتے ہیں اور گناہوں سے پاک فرما دیتے ہیں۔
+            </p>
+            <p>
+                احادیثِ مبارکہ میں اس رات کی عظمت و شان کا تذکرہ موجود ہے۔ یہ رات عبادت، استغفار، توبہ اور دعا و مناجات کی رات ہے جس میں اللہ تعالیٰ اپنے فضل و کرم سے نوازتے ہیں۔
+            </p>
+        </section>
+
+        <!-- Section 2: Significance -->
+        <section class="section-2">
+            <div class="section-icon">
+                <i class="fas fa-star-and-crescent"></i>
+            </div>
+            <h2>شبِ براءت کی فضیلت و برکت</h2>
+            <p>
+                حضور نبی کریم ﷺ نے ارشاد فرمایا کہ اللہ تبارک و تعالیٰ <span class="highlight">شعبان کی پندرہویں شب</span> آسمانِ دنیا پر تجلی فرماتے ہیں اور اپنے بندوں کو ندا دیتے ہیں: "کوئی ہے جو بخشش کا طالب ہو؟ کوئی ہے جو رزق کا سوال کرتا ہو؟ کوئی ہے جو مصیبت میں گرفتار ہو؟"
+            </p>
+            <p>
+                اس رات میں <span class="highlight">توبہ اور استغفار</span> کی بے پناہ فضیلت ہے۔ جو شخص اس مبارک رات کو عبادت و ریاضت میں گزارے، اللہ تعالیٰ اس کے گناہوں کو معاف فرما دیتے ہیں اور اس کی دعاؤں کو قبولیت سے نوازتے ہیں۔
+            </p>
+        </section>
+
+        <!-- Quranic Verses Section -->
+        <section class="quran-section">
+            <div class="section-icon">
+                <i class="fas fa-book-quran"></i>
+            </div>
+            <h2>شبِ براءت کے بارے میں قرآنی آیات</h2>
+
+            <!-- Verse 1: Surah Ad-Dukhan 44:3-4 -->
+            <div class="verse-container">
+                <div class="verse-number">
+                    <i class="fas fa-star"></i>
+                    <span>سورۃ الدخان، آیات ۳-۴</span>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="arabic-text">
+                    إِنَّا أَنزَلْنَاهُ فِي لَيْلَةٍ مُّبَارَكَةٍ ۚ إِنَّا كُنَّا مُنذِرِينَ ۝ فِيهَا يُفْرَقُ كُلُّ أَمْرٍ حَكِيمٍ
+                </div>
+                <div class="urdu-translation">
+                    ترجمہ: بیشک ہم نے اس (قرآن) کو ایک بابرکت رات میں نازل فرمایا، بیشک ہم ڈر سنانے والے ہیں۔ اس رات میں ہر حکمت والے کام کا فیصلہ کیا جاتا ہے۔
+                </div>
+            </div>
+
+            <!-- Verse 2: Surah Al-Qadr 97:1-3 -->
+            <div class="verse-container">
+                <div class="verse-number">
+                    <i class="fas fa-star"></i>
+                    <span>سورۃ القدر، آیات ۱-۳</span>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="arabic-text">
+                    إِنَّا أَنزَلْنَاهُ فِي لَيْلَةِ الْقَدْرِ ۝ وَمَا أَدْرَاكَ مَا لَيْلَةُ الْقَدْرِ ۝ لَيْلَةُ الْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ
+                </div>
+                <div class="urdu-translation">
+                    ترجمہ: بیشک ہم نے اسے (قرآن کو) شبِ قدر میں نازل فرمایا۔ اور آپ کو کیا معلوم کہ شبِ قدر کیا ہے؟ شبِ قدر ہزار مہینوں سے بہتر ہے۔
+                </div>
+            </div>
+
+            <!-- Verse 3: Surah Al-Baqarah 2:186 -->
+            <div class="verse-container">
+                <div class="verse-number">
+                    <i class="fas fa-star"></i>
+                    <span>سورۃ البقرہ، آیت ۱۸۶</span>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="arabic-text">
+                    وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ ۖ أُجِيبُ دَعْوَةَ الدَّاعِ إِذَا دَعَانِ
+                </div>
+                <div class="urdu-translation">
+                    ترجمہ: اور جب میرے بندے آپ سے میرے متعلق دریافت کریں تو (فرما دیں) میں قریب ہوں، پکارنے والے کی پکار کا جواب دیتا ہوں جب وہ مجھے پکارے۔
+                </div>
+            </div>
+
+            <!-- Verse 4: Surah Ghafir 40:60 -->
+            <div class="verse-container">
+                <div class="verse-number">
+                    <i class="fas fa-star"></i>
+                    <span>سورۃ غافر، آیت ۶۰</span>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="arabic-text">
+                    وَقَالَ رَبُّكُمُ ادْعُونِي أَسْتَجِبْ لَكُمْ
+                </div>
+                <div class="urdu-translation">
+                    ترجمہ: اور تمہارے رب نے فرمایا: مجھ سے دعا کرو، میں تمہاری دعا قبول کروں گا۔
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <div class="section-icon">
+                <i class="fas fa-images"></i>
+            </div>
+            <h2>شبِ براءت کی روحانی تصاویر</h2>
+
+            <div class="gallery-grid">
+                <!-- Gallery Item 1: Mosques -->
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <i class="fas fa-mosque"></i>
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">مساجد کی روحانیت</h3>
+                        <p class="gallery-description">مقدس مقامات میں عبادت کی سکون بخش فضا</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2: Lanterns & Night Sky -->
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">چاندنی رات</h3>
+                        <p class="gallery-description">شبِ براءت کی پُر نور اور مبارک رات</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3: Quran & Islamic Books -->
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <i class="fas fa-book-quran"></i>
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">قرآنِ پاک کی تلاوت</h3>
+                        <p class="gallery-description">کلامِ الٰہی کی تلاوت کی برکتیں</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4: People Praying -->
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <i class="fas fa-praying-hands"></i>
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">دعا و مناجات</h3>
+                        <p class="gallery-description">بارگاہِ الٰہی میں عاجزی و انکساری</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5: Sweet Treats -->
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <i class="fas fa-cookie-bite"></i>
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">روایتی کھانے</h3>
+                        <p class="gallery-description">حلوے اور مٹھائی کی تقسیم</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6: Nature & Calm -->
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">فطرت کا سکون</h3>
+                        <p class="gallery-description">پُر سکون رات کا حسین منظر</p>
+                    </div>
+                </div>
+
+              
+        </section>
+
+        <!-- Section 3: What to Do -->
+        <section class="section-3">
+            <div class="section-icon">
+                <i class="fas fa-praying-hands"></i>
+            </div>
+            <h2>اس مبارک رات میں کیا عمل کریں؟</h2>
+            <p>
+                اس بابرکت شب میں <span class="highlight">نوافل، تلاوتِ قرآنِ پاک، ذکر و اذکار، استغفار، درود و سلام اور صدقہ و خیرات</span> کریں۔ قلب کی گہرائیوں سے رب العالمین کی بارگاہ میں اپنے قصوروں کی معافی طلب کریں۔
+            </p>
+            <p>
+                اپنے والدین محترم، اعزہ و اقارب، احباب اور تمام اہلِ ایمان کے لیے دعائے خیر کریں۔ اللہ کریم سے دنیا و آخرت کی سعادتیں اور کامرانیاں مانگیں۔
+            </p>
+        </section>
+
+        <!-- Section 4: Prayers and Recitations -->
+        <section class="section-4">
+            <div class="section-icon">
+                <i class="fas fa-book-quran"></i>
+            </div>
+            <h2>مسنون دعائیں اور اعمال</h2>
+            <p>
+                اس رات میں خصوصی طور پر <span class="highlight">استغفار</span> کی کثرت کریں۔ "اَستَغفِرُاللہَ رَبّی مِن کُلِّ ذَنبٍ وَّ اَتُوبُ اِلَیہِ" کا ورد کریں اور اللہ تعالیٰ کے حضور گڑگڑا کر دعا کریں۔
+            </p>
+            <p>
+                حضور نبی پاک ﷺ پر درود و سلام بھیجیں: "اَللّٰھُمَّ صَلِّ عَلٰی مُحَمَّدٍ وَّ عَلٰی آلِ مُحَمَّدٍ"۔ سورہ یٰسین کی تلاوت کریں اور <span class="highlight">تہجد کی نماز</span> کا اہتمام فرمائیں۔
+            </p>
+            <p>
+                "رَبَّنَا آتِنَا فِی الدُّنْیَا حَسَنَۃً وَّفِی الْآخِرَۃِ حَسَنَۃً وَّقِنَا عَذَابَ النَّارِ" کی دعا کثرت سے پڑھیں اور اللہ سے ہر خیر کا سوال کریں۔
+            </p>
+        </section>
+
+        <!-- Section 5: Lessons from Shab-e-Barat -->
+        <section class="section-5">
+            <div class="section-icon">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+            <h2>شبِ براءت سے ملنے والے سبق</h2>
+            <p>
+                یہ مقدس رات ہمیں <span class="highlight">توبہ اور رجوع الی اللہ</span> کا درس دیتی ہے۔ ہمیں چاہیے کہ اپنی زندگی کا محاسبہ کریں، اپنی کوتاہیوں پر نادم ہوں اور مستقبل میں نیکیوں کی راہ اختیار کرنے کا پختہ عزم کریں۔
+            </p>
+            <p>
+                یہ رات ہمیں یاد دلاتی ہے کہ <span class="highlight">اللہ کی رحمت لامحدود</span> ہے اور وہ ہر توبہ کرنے والے بندے کو معاف فرماتے ہیں۔ ہمیں امید، یقین اور خلوصِ نیت کے ساتھ بارگاہِ ایزدی میں سرِ تسلیم خم کرنا چاہیے۔
+            </p>
+        </section>
+
+        <!-- Section 6: Special Duas -->
+        <section class="dua-section">
+            <div class="stars">
+                <span class="star">✦</span>
+                <span class="star">✦</span>
+                <span class="star">✦</span>
+                <span class="star">✦</span>
+                <span class="star">✦</span>
+                <span class="star">✦</span>
+                <span class="star">✦</span>
+            </div>
+            <h2><i class="fas fa-hands-praying"></i> خصوصی دعائیں</h2>
+            
+            <!-- Dua for Family -->
+            <div class="dua-subsection">
+                <h3 class="dua-heading">
+                    <i class="fas fa-home"></i>
+                    میرے گھر والوں کے لیے دعا
+                </h3>
+                <p class="dua-text">
+                    یا اللہ! میرے <span style="color: var(--gold); font-weight: 700;">مرحوم والد</span> کی مغفرت فرما، ان کی قبر کو نور سے بھر دے اور انہیں جنت الفردوس میں اعلیٰ مقام عطا فرما۔
+                </p>
+                <p class="dua-text">
+                    اے باری تعالیٰ! میری <span style="color: var(--gold); font-weight: 700;">والدہ محترمہ</span> کو لمبی زندگی اور کامل صحت عطا فرما۔ میرے <span style="color: var(--gold); font-weight: 700;">بھائی اور بھابھی</span> کے درمیان ہمیشہ محبت و اتفاق قائم رکھ اور انہیں ہر قسم کی پریشانی سے دور رکھ۔
+                </p>
+                <p class="dua-text">
+                    یا الٰہی! میرے <span style="color: var(--gold); font-weight: 700;">بھتیجوں</span> کو نیک اور صالح بنا، انہیں والدین کی آنکھوں کی ٹھنڈک بنا اور ان کا نصیب بلند فرما۔ ان کا مستقبل روشن فرما اور انہیں ہر بری نظر سے محفوظ رکھ۔
+                </p>
+                <p class="dua-text">
+                    یا رحمٰن! میرے پورے گھرانے پر اپنی رحمتوں کا سایہ رکھ، ہمارے رزق میں برکت دے اور ہمیں دنیا و آخرت کی تمام خوشیاں نصیب فرما۔
+                </p>
+                <button class="ameen-btn" onclick="showBlessing()">آمین یا رب العالمین</button>
+            </div>
+
+            <!-- Dua for Beloved -->
+            <div class="dua-subsection">
+                <h3 class="dua-heading">
+                    <i class="fas fa-heart"></i>
+                    میری پسندیدہ عورت کے لیے دعا
+                </h3>
+                <p class="dua-text">
+                    یا اللہ! میری پیاری <span style="color: var(--gold); font-weight: 700;">فضا</span> کو ہمیشہ اپنی حفظ و امان میں رکھ۔ اسے ہر قسم کے دکھ، پریشانی اور نظرِ بد سے محفوظ رکھ۔
+                </p>
+                <p class="dua-text">
+                    اے باری تعالیٰ! اسے <span style="color: var(--gold); font-weight: 700;">تعلیمی میدان میں شاندار کامیابی</span> عطا فرما، اس کا ذہن روشن کر اور اسے علم و حکمت سے مالا مال کر دے۔
+                </p>
+                <p class="dua-text">
+                    یا الٰہی! فضا کی معصوم <span style="color: var(--gold); font-weight: 700;">مسکراہٹ کو ہمیشہ قائم رکھنا</span>، اسے ہمیشہ خوش و خرم رکھنا اور اس کے دل کو کبھی کوئی غم نہ دینا۔
+                </p>
+                <p class="dua-text">
+                    اے میرے رب! ہماری محبت کو ہمیشہ سلامت رکھنا اور ہمیں کبھی ایک دوسرے سے دور نہ کرنا۔ ہمارے درمیان ہمیشہ پیار اور سکون قائم رکھنا اور <span style="color: var(--gold); font-weight: 700;">ہمیں جلد از جلد ایک کر دے</span>۔
+                </p>
+                <p class="dua-text">
+                    یا کریم! فضا کی ہر جائز دعا قبول فرما اور ہمیں دنیا و آخرت میں ایک دوسرے کا بہترین نصیب بنا۔
+                </p>
+                <button class="ameen-btn" onclick="showBlessing()">آمین یا رب العالمین</button>
+            </div>
+
+            <!-- Dua for Self -->
+            <div class="dua-subsection">
+                <h3 class="dua-heading">
+                    <i class="fas fa-praying-hands"></i>
+                    میری دعا
+                </h3>
+                <p class="dua-text">
+                    یا اللہ! میرے <span style="color: var(--gold); font-weight: 700;">گناہوں کو معاف</span> فرما اور میری خطاؤں سے درگزر فرما۔ 
+                </p>
+                <p class="dua-text">
+                    اے ربِ ذوالجلال! مجھے <span style="color: var(--gold); font-weight: 700;">رزقِ حلال</span> کمانے کی توفیق عطا فرما اور میرے دل سے تمام برے خیالات کو دور فرما کر اسے اپنے نور سے بھر دے۔
+                </p>
+                <p class="dua-text">
+                    یا الٰہی! میری دعاؤں کو اپنی بارگاہ میں قبول فرما اور مجھے صراطِ مستقیم پر قائم رکھ۔
+                </p>
+                <button class="ameen-btn" onclick="showBlessing()">آمین یا رب العالمین</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>شبِ براءت مبارک ہو</p>
+        <p>اللہ تعالیٰ ہم سب کو اپنی رحمتوں، برکتوں اور مغفرت سے نوازے</p>
+        <div class="footer-icons">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-mosque"></i>
+        </div>
+    </footer>
+
+    <script>
+        function showBlessing() {
+            const blessings = ['✨', '🌟', '💫', '⭐', '🤲', '☪️', '🕌'];
+            const colors = ['#d4af37', '#ffffff', '#2a9d65', '#1a7a50'];
+            
+            for (let i = 0; i < 12; i++) {
+                setTimeout(() => {
+                    const blessing = document.createElement('div');
+                    blessing.className = 'blessing';
+                    blessing.textContent = blessings[Math.floor(Math.random() * blessings.length)];
+                    blessing.style.left = Math.random() * window.innerWidth + 'px';
+                    blessing.style.top = window.innerHeight / 2 + 'px';
+                    blessing.style.color = colors[Math.floor(Math.random() * colors.length)];
+                    document.body.appendChild(blessing);
+                    
+                    setTimeout(() => {
+                        blessing.remove();
+                    }, 3000);
+                }, i * 150);
+            }
+        }
+    </script>
+</body>
+</html>
